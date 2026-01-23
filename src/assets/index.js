@@ -49,7 +49,7 @@ import icon from "./icon.jpg";
 import ethforall from "./ethforall.png";
 import ugi from "./ryan.jpg";
 import alb from "./alb.svg";
-import gcuf from "./gcuf.svg";
+import gcuf from "./gcuf.png";
 import ps19 from "./ps19.svg";
 import smit from "./smit.svg";
 import icodeguru from "./icodeguru.svg";

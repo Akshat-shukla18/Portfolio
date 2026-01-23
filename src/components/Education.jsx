@@ -28,9 +28,9 @@ const FeatureCard = ({
 	${index === educationList.length - 1 ? "mb-0" : "mb-6"} feature-card`}
   >
     <div
-      className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}
+      className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-black`}
     >
-      <img src={icon} alt="icon" className="w-[80%] h-[80%] object-contain" />
+      <img src={icon} alt="icon" className="w-[95%] h-[95%] object-contain" />
     </div>
     <div className="flex-1 flex flex-col ml-4">
       <h4 className="font-poppins font-semibold text-white text-[20px] leading-[30px] mb-1 text-gradient">
