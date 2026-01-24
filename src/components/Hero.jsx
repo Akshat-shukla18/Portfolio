@@ -167,7 +167,7 @@ const Hero = () => {
             to pursue further studies for the advance emerging technology
             research.
           </p>
-          <a href="/Resume-AK 10.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="/AkResume.pdf" target="_blank" rel="noopener noreferrer">
 <button className="col-auto border-2 border-teal-200 w-60 text-center text-white font-bold px-6 py-2 mt-16 rounded-lg animate-pulse hover:shadow-neon hover:shadow-teal-400 transition duration-300 mb-4">
                            Resume
                            </button></a>
