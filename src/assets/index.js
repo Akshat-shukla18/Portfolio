@@ -58,14 +58,15 @@ import qnar from "./qnar.svg";
 import amal from "./amal.svg";
 import ibm from "./ibm.svg";
 import meta from "./meta.svg";
-import pftp from "./pftp.svg";
+import pftp from "./pftp.png";
 import peter from "./peter.jpeg";
-import kamal from "./shre.jpeg";
-import urooj from "./ss.jpeg";
+// import kamal from "./shre.jpeg";
+import infos from "./infosyslogo.png";
+// import urooj from "./ss.jpeg";
 import abdullah from "./help.jpeg";
 import ahmad from "./akshat.jpeg";
 import fastech from "./fastech.png";
-import devlotech from "./devlotech.svg";
+import devlotech from "./devlotech.png";
 
 export {
   quotes,
@@ -74,6 +75,7 @@ export {
   shield,
   star,
   menu,
+  infos,
   close,
   google,
   apple,
@@ -131,8 +133,8 @@ export {
   pftp,
   peter,
   ahmad,
-  kamal,
-  urooj,
+  
+  
   abdullah,
   fastech,
   devlotech

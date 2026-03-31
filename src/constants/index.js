@@ -41,11 +41,12 @@ import {
   pftp,
   peter,
   ahmad,
-  kamal,
-  urooj,
+ 
+  
   abdullah,
   fastech,
-  devlotech
+  devlotech,
+  infos
 
 } from "../assets";
 
@@ -142,6 +143,10 @@ export const navLinks = [
     title: "Skills & Experience",
   },
   {
+    id: "projects",
+    title: "Projects",
+  },
+  {
     id: "education",
     title: "Education",
   },
@@ -149,11 +154,6 @@ export const navLinks = [
     id: "achievements",
     title: "Achievements",
   },
-  {
-    id: "projects",
-    title: "Projects",
-  },
-  
   {
     id: "about",
     title: "AboutMe",
@@ -193,13 +193,25 @@ export const achievements = [
     id: "a-1",
     icon: gcuf,
     event: "Academic Achievements",
-    position: "9.0/10 CGPA  current",
-    content1: "Top Position in 2nd & 3th Semesters",
-    content2: "Class Representative for Semester 2-5",
+    position: "Current CGPA: 9.0/10",
+    content1: "Ranked at the top across all completed semesters",
+    content2: "Elected Class Representative for three consecutive years",
     // content3: "Best Module on Biconomy SDK",
     // article: "https://www.thehindu.com/news/cities/Mangalore/nitk-iiit-delhi-team-makes-it-to-top-12-winners-in-ethindia-22/article66238923.ece",
     // project: "https://devfolio.co/projects/chargeswap-3527",
     // youtube: "https://youtu.be/9rieTya8Yds?t=3908",
+  },
+  {
+     id: "a-3",
+    icon: gcuf,
+     event: "Smart India Hackathon 2025 ",
+     position: "College Round Successfully Cleared",
+     content1: "Led the team through innovative problem-solving to secure qualification",
+    content2: "Demonstrated technical and collaborative excellence in a competitive environment",
+  //   // content3: "Best Module on Biconomy SDK",
+  //   // article: "https://www.thehindu.com/news/cities/Mangalore/nitk-iiit-delhi-team-makes-it-to-top-12-winners-in-ethindia-22/article66238923.ece",
+  //   // project: "https://devfolio.co/projects/chargeswap-3527",
+  //   // youtube: "https://youtu.be/9rieTya8Yds?t=3908",
   },
   {
     id: "a-2",
@@ -210,18 +222,7 @@ export const achievements = [
     content3: "",
     // github: "https://github.com/pranav2305/GreenTrust",
   },
-  // {
-  //   id: "a-3",
-  //   icon: gcuf,
-  //   event: "U-17 Football ",
-  //   position: "",
-  //   content1: "",
-  //   content2: "Monthly stipend is also provided",
-  //   // content3: "Best Module on Biconomy SDK",
-  //   // article: "https://www.thehindu.com/news/cities/Mangalore/nitk-iiit-delhi-team-makes-it-to-top-12-winners-in-ethindia-22/article66238923.ece",
-  //   // project: "https://devfolio.co/projects/chargeswap-3527",
-  //   // youtube: "https://youtu.be/9rieTya8Yds?t=3908",
-  // },
+  
   // {
   //   id: "a-3",
   //   icon: lightspeed,
@@ -585,13 +586,13 @@ export const experiences = [
 export const projects = [
   {
     id: "project-1",
-    title: "Galaxy Chatbot",
-    github: "https://github.com/Akshat-shukla18/Chat-application",
-    link: "https://github.com/Akshat-shukla18/Chat-application",
+    title: "Interview Prep Platform",
+    github: "https://github.com/Akshat-shukla18/Interview-prep",
+    link: "https://github.com/Akshat-shukla18/Interview-prep",
     image: comicify_ai,
     content:
-      "Designed an interactive chatbot with Flask and JavaScript, featuring a trained model, intents for query handling, and a user-friendly GUI. Key components include model training, backend integration, and seamless chat functionality, offering a complete guide to chatbot deployment.",
-    stack: [
+      "A focused platform with two modes: Assistant Mode for growth-driven guidance, and Interview Mode for role-based mock interviews. Engage in real-time verbal conversations with an AI interviewer, building confidence and readiness for real-world interviews.       f                 ",
+         stack: [
       {
         id: "icon-1",
         icon: SiReact,
@@ -613,12 +614,12 @@ export const projects = [
   },
   {
     id: "project-2",
-    title: "Excel Sheet analyser",
-    github: "https://github.com/Akshat-shukla18/Project-1.",
-    link: "https://github.com/Akshat-shukla18/Project-1.",
+    title: "Excel-analytics",
+    github: "https://github.com/Akshat-shukla18/excelanalysis",
+    link: "https://github.com/Akshat-shukla18/excelanalysis",
     image: ecell,
     content:
-      "Developed a data visualization project showcasing excell data into graphical representations by maps and graphs for the better understanding of the simple Data.",
+      "Transform raw Excel and CSV files into interactive visual insights with precision-driven analytics. Uncover patterns, trends, and decisions instantly through a smart, intuitive data exploration experience.",
     stack: [
       {
         id: "icon-1",
@@ -756,18 +757,14 @@ export const projects = [
   
   {
     id: "project-9",
-    title: "Expense tracker",
-    // github: "https://github.com/mittal-parth/Cash-Flow-Minmiser",
-    //link: "https://devlotech.com/",
+    title: "Career Roadmap Planner",
+     github: "https://github.com/Akshat-shukla18/career-roadmap-planner",
+    link: "https://github.com/Akshat-shukla18/career-roadmap-planner",
     image: devlotech,
     content:
-      "Now no need to check your balance by entering PIN in public , just use this expense tracker which generally tracks all the timely tranaction and also shows ai based representation of monthly as well as weekly report of your expense.",
+      "Design personalized, goal-oriented roadmaps tailored to your career ambitions with intelligent guidance.Track daily progress, stay consistent with reminders, and turn long-term goals into structured, achievable milestones.",
     stack: [
-      {
-        id: "icon-1",
-        icon: FaWordpressSimple,
-        name: "Worpress"
-      },
+     
       {
         id: "icon-2",
         icon: AiFillHtml5,
@@ -837,6 +834,39 @@ export const stats = [
 // List out the extra curricular activities you have induldged in like - student clubs, joining research groups etc.
 export const extraCurricular = [
   {
+    id: 3,
+    organisation: "Infosys",
+    title: "Frontend Developer Certificate",
+    duration: "March-2026",
+    content: [
+      {
+        text: "Completed Meta Front-End Developer Professional Certificate through Infosys.",
+      },
+      {
+        text: "Mastered skills in HTML, CSS, JavaScript, React, and responsive web design.",
+      },
+      {
+        text: "Developed dynamic web applications and practiced hands-on projects for portfolio enhancement.",
+      },
+    ],
+    logo:infos,
+  },
+  {
+    id: 2,
+    organisation: "GreatLearning",
+    title: "Full Stack Developer Training",
+    duration: "June 2025 - November 2025",
+    content: [
+      {
+        text: "Gained expertise inJavaScript, Node.js, React, and cloud-based app development.",
+      },
+      {
+        text: "Built RESTful APIs, deployed applications, and mastered version control with Git.",
+      },
+    ],
+    logo: amal,
+  },
+  {
     id: 1,
     organisation: "Intern-shala",
     title: "Representative",
@@ -850,45 +880,15 @@ export const extraCurricular = [
         text: "Led a mega project on AI tech and providing clean code management to the team.",
       },
     ],
-    logo: amal,
+    logo: pba,
   },
 
-  {
-    id: 2,
-    organisation: "GreatLearning",
-    title: "Full Stack Developer Professional",
-    duration: "June 2024",
-    content: [
-      {
-        text: "Gained expertise inJavaScript, Node.js, React, and cloud-based app development.",
-      },
-      {
-        text: "Built RESTful APIs, deployed applications, and mastered version control with Git.",
-      },
-    ],
-    logo: amal,
-  },
-]
+  
+
 //     logo: ibm,
 //   },
-//   {
-//     id: 3,
-//     organisation: "META",
-//     title: "Frontend Developer Professional",
-//     duration: "Sepetember 2023",
-//     content: [
-//       {
-//         text: "Completed Meta Front-End Developer Professional Certificate through a Coursera program by my university and HEC.",
-//       },
-//       {
-//         text: "Mastered skills in HTML, CSS, JavaScript, React, and responsive web design.",
-//       },
-//       {
-//         text: "Developed dynamic web applications and practiced hands-on projects for portfolio enhancement.",
-//       },
-//     ],
-//     logo: meta,
-//   },
+  
+]
 //   {
 //     id: 4,
 //     organisation: "SMIT",
