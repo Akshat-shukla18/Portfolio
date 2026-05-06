@@ -13,12 +13,12 @@ const Navbar = () => {
 
     {/* Logo */}
     <a href="#home" className="flex items-center">
-      <img
-        src={parthmittal}
-        alt="Akshat Shukla"
-        className="w-[55px] h-[55px] sm:w-[45px] sm:h-[45px]  object-cover rounded-full border-2 border-blue-400 shadow-md hover:scale-105 transition duration-100"
-      />
-    </a>
+  <img
+    src={parthmittal}
+    alt="Akshat Shukla"
+    className="w-[55px] h-[55px] sm:w-[45px] sm:h-[45px] object-cover rounded-full border-2 border-blue-400 shadow-md scale-155 hover:scale-135 transition duration-100"
+  />
+</a>
 
     {/* Desktop Nav */}
     <ul className="list-none sm:flex hidden justify-end items-center flex-1 ml-10">

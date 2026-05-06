@@ -616,7 +616,7 @@ export const projects = [
     id: "project-2",
     title: "Excel-analytics",
     github: "https://github.com/Akshat-shukla18/excelanalysis",
-    link: "https://github.com/Akshat-shukla18/excelanalysis",
+    link: "https://datasheeet.netlify.app/",
     image: ecell,
     content:
       "Transform raw Excel and CSV files into interactive visual insights with precision-driven analytics. Uncover patterns, trends, and decisions instantly through a smart, intuitive data exploration experience.",
@@ -699,8 +699,8 @@ export const projects = [
   {
     id: "project-5",
     title: "IPaddress Tracker",
-    github: "https://github.com/umairazmat/Ai-Codify",
-    link: "http://recruitment.nitk.ac.in/",
+    github: "https://github.com/Akshat-shukla18/ipTracker",
+    link: "https://foa7jvkdazedtdozpbmbvw.on.drv.tw/ipTracker/ipTracker/index.htm",
     image: chargeswap,
     content:
       "A smart tool works upon the respective IPs, and get real-time AI-driven geolocation and feedback for the respective IP.",

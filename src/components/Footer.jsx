@@ -40,118 +40,183 @@ const Footer = () => {
     <>
       <ToastContainer position="top-right" autoClose={5000} />
 
-      <div className={`bg-primary ${styles.flexCenter} ${styles.paddingX}`}>
-        <div className={`${styles.boxWidth}`}>
-          <section
-            id="contactMe"
-            className={`flex flex-col ${styles.paddingY}`}
-          >
-            <div className="flex flex-col items-center justify-center min-h-[80vh]">
+     <div
+  className={`bg-primary ${styles.flexCenter} ${styles.paddingX} w-full overflow-hidden`}
+>
+  <div className={`${styles.boxWidth} w-full`}>
+    
+    <section
+      id="contactMe"
+      className={`flex flex-col ${styles.paddingY}`}
+    >
+      
+      <div className="w-full flex flex-col items-center justify-center py-16 sm:py-20">
 
-              {/* Heading */}
-              <h1 className="text-3xl sm:text-4xl md:text-5xl text-white font-bold text-center px-4">
-                LET'S CONNECT!
-              </h1>
+        {/* HEADING */}
+        <h1 className="text-white text-center font-bold leading-tight text-4xl sm:text-5xl md:text-6xl">
+          LET&apos;S CONNECT!
+        </h1>
 
-              {/* Main Container */}
-              <div className="w-full flex justify-center mt-10">
-                <div className="flex flex-col lg:flex-row items-center justify-center w-full max-w-6xl gap-10">
+        {/* MAIN CONTAINER */}
+        <div className="w-full max-w-7xl mt-14 flex flex-col lg:flex-row items-center justify-between gap-14 lg:gap-20">
 
-                  {/* LEFT SIDE - CONTACT CARD */}
-                  <div className="w-full max-w-xl lg:max-w-2xl px-2">
-                    <div className="p-5 sm:p-6 bg-gray-800 bg-opacity-50 rounded-lg shadow-lg">
+          {/* LEFT SIDE */}
+          <div className="w-full lg:w-[58%] flex justify-center">
 
-                      <p className="text-gray-300 mb-5 text-sm sm:text-base lg:text-lg">
-                        If you have any questions or concerns, feel free to
-                        contact me. I’m open to work opportunities aligned with my skills.
-                      </p>
+            <div className="w-full max-w-2xl bg-white/5 border border-white/10 backdrop-blur-md rounded-3xl p-6 sm:p-8 md:p-10 shadow-2xl">
 
-                      <div className="space-y-6 sm:space-y-8">
+              {/* DESCRIPTION */}
+              <p className="text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed">
+                If you have any questions or concerns, feel free to
+                contact me. I’m open to work opportunities aligned with
+                my skills and interests.
+              </p>
 
-                        {/* Phone */}
-                        <div className="flex items-center space-x-4">
-                          <AiOutlinePhone className="w-5 h-5 sm:w-6 sm:h-6 text-teal-400" />
-                          <div className="text-gray-400">
-                            <h3 className="text-base sm:text-lg font-semibold">Phone</h3>
-                            <p className="text-xs sm:text-sm">+91 7056758070</p>
-                          </div>
-                        </div>
+              {/* CONTACT INFO */}
+              <div className="mt-8 space-y-7">
 
-                        {/* Email */}
-                        <div className="flex items-start space-x-4">
-                          <AiOutlineMail className="w-5 h-5 sm:w-6 sm:h-6 text-teal-400" />
-                          <div className="text-gray-400">
-                            <h3 className="text-base sm:text-lg font-semibold">Email</h3>
-                            <p className="text-xs sm:text-sm break-words">
-                              ashukla20062006@gmail.com
-                            </p>
-                          </div>
-                        </div>
-
-                        {/* Location */}
-                        <div className="flex items-center space-x-4">
-                          <AiOutlineHome className="w-5 h-5 sm:w-6 sm:h-6 text-teal-400" />
-                          <div className="text-gray-400">
-                            <h3 className="text-base sm:text-lg font-semibold">Location</h3>
-                            <p className="text-xs sm:text-sm">Chandigarh, India</p>
-                          </div>
-                        </div>
-                      </div>
-
-                      {/* Social Icons */}
-                      <div className="flex flex-wrap justify-start mt-6 sm:mt-8">
-                        {socialMedia.map((social) => (
-                          <a
-                            href={social.link}
-                            target="_blank"
-                            rel="noreferrer"
-                            key={social.id}
-                            className="text-white mr-4 mb-3 text-xl sm:text-2xl hover:text-teal-200 transition"
-                          >
-                            {React.createElement(social.icon)}
-                          </a>
-                        ))}
-                      </div>
-
-                    </div>
+                {/* PHONE */}
+                <div className="flex items-start gap-4">
+                  <div className="p-3 rounded-xl bg-teal-400/10">
+                    <AiOutlinePhone className="text-teal-400 text-xl sm:text-2xl" />
                   </div>
 
-                  {/* RIGHT SIDE - CTA */}
-                  <div className="flex flex-col items-center w-full lg:w-auto">
+                  <div>
+                    <h3 className="text-white font-semibold text-lg">
+                      Phone
+                    </h3>
 
-                    <button
-                      className="border-2 border-teal-400 text-white font-bold px-8 sm:px-12 md:px-16 py-2 mt-6 lg:mt-0 rounded-lg animate-pulse hover:shadow-neon hover:shadow-teal-400 transition duration-300 w-full sm:w-auto"
-                      onClick={() =>
-                        window.open("mailto:ashukla20062006@gmail.com", "_blank")
-                      }
-                    >
-                      Connect now!
-                    </button>
-
-                    <div className="mt-6 sm:mt-10">
-                      <RotatingText
-                        texts={["Any Work?", "Let Me Know!"]}
-                        mainClassName="px-3 sm:px-4 bg-cyan-300 text-black overflow-hidden py-2 justify-center rounded-lg text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center"
-                        staggerFrom={"last"}
-                        initial={{ y: "100%" }}
-                        animate={{ y: 0 }}
-                        exit={{ y: "-120%" }}
-                        staggerDuration={0.015}
-                        splitLevelClassName="overflow-hidden pb-1"
-                        transition={{ type: "spring", damping: 30, stiffness: 400 }}
-                        rotationInterval={2000}
-                      />
-                    </div>
-
+                    <p className="text-gray-400 text-sm sm:text-base">
+                      +91 7056758070
+                    </p>
                   </div>
-
                 </div>
+
+                {/* EMAIL */}
+                <div className="flex items-start gap-4">
+                  <div className="p-3 rounded-xl bg-teal-400/10">
+                    <AiOutlineMail className="text-teal-400 text-xl sm:text-2xl" />
+                  </div>
+
+                  <div>
+                    <h3 className="text-white font-semibold text-lg">
+                      Email
+                    </h3>
+
+                    <p className="text-gray-400 text-sm sm:text-base break-all">
+                      ashukla20062006@gmail.com
+                    </p>
+                  </div>
+                </div>
+
+                {/* LOCATION */}
+                <div className="flex items-start gap-4">
+                  <div className="p-3 rounded-xl bg-teal-400/10">
+                    <AiOutlineHome className="text-teal-400 text-xl sm:text-2xl" />
+                  </div>
+
+                  <div>
+                    <h3 className="text-white font-semibold text-lg">
+                      Location
+                    </h3>
+
+                    <p className="text-gray-400 text-sm sm:text-base">
+                      Chandigarh, India
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+              {/* SOCIAL ICONS */}
+              <div className="flex flex-wrap items-center gap-5 mt-10">
+
+                {socialMedia.map((social) => (
+                  <a
+                    href={social.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    key={social.id}
+                    className="text-white text-2xl hover:text-teal-300 hover:scale-110 transition duration-300"
+                  >
+                    {React.createElement(social.icon)}
+                  </a>
+                ))}
+
               </div>
 
             </div>
-          </section>
+          </div>
+
+          {/* RIGHT SIDE */}
+          <div className="w-full lg:w-[42%] flex flex-col items-center justify-center">
+
+            {/* BUTTON */}
+            <button
+              className="
+                border-2 border-teal-400
+                text-white font-bold
+                px-10 sm:px-14
+                py-3 sm:py-4
+                rounded-2xl
+                text-base sm:text-lg
+                hover:bg-teal-400/10
+                hover:shadow-[0_0_30px_rgba(45,212,191,0.5)]
+                transition-all duration-300
+                w-full max-w-[280px]
+              "
+              onClick={() =>
+                window.open(
+                  "mailto:ashukla20062006@gmail.com",
+                  "_blank"
+                )
+              }
+            >
+              Connect Now
+            </button>
+
+            {/* ROTATING TEXT */}
+            <div className="mt-8 sm:mt-10 flex justify-center">
+
+              <RotatingText
+                texts={["Any Work?", "Let Me Know!"]}
+                mainClassName="
+                  px-5 py-3
+                  bg-cyan-300
+                  text-black
+                  rounded-2xl
+                  text-xl sm:text-2xl md:text-3xl
+                  font-semibold
+                  overflow-hidden
+                  text-center
+                  shadow-lg
+                "
+                staggerFrom={"last"}
+                initial={{ y: "100%" }}
+                animate={{ y: 0 }}
+                exit={{ y: "-120%" }}
+                staggerDuration={0.015}
+                splitLevelClassName="overflow-hidden pb-1"
+                transition={{
+                  type: "spring",
+                  damping: 30,
+                  stiffness: 400,
+                }}
+                rotationInterval={2000}
+              />
+
+            </div>
+
+          </div>
+
         </div>
+
       </div>
+
+    </section>
+
+  </div>
+</div>
 
       {/* FOOTER */}
       <footer className="bg-gray-900 px-4 sm:px-10">

@@ -140,7 +140,7 @@ const Hero = () => {
             , I enjoy building scalable, user-focused applications.
             <br />
             <br />
-            I'm , a full-stack developer by Easyshiksha. I specialize
+            I'm , a full-stack developer by INFOSYS. I specialize
             in{" "}
             <span className="text-teal-500 font-bold">
               MERN with AI developed applications.
@@ -172,9 +172,10 @@ const Hero = () => {
                            Resume
                            </button></a>
         </div>
-        <div className="flex flex-col justify-center items-center relative mt-8 md:mt-0">
-          <div className="overflow-hidden w-80 h-80 mr-16 mt-12">
+       <div className="flex flex-col justify-center items-center relative mt-8 md:mt-0">
+       <div className="relative overflow-hidden w-80 h-100 mr-16 mt-12">
             <Spline scene="https://prod.spline.design/ZeuhCWq3aLO4PLwH/scene.splinecode" />
+              <div className="absolute bottom-0 right-0 w-40 h-16 bg-[#020617] z-10"></div>
           </div>
         </div>
       </section>

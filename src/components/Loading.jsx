@@ -18,13 +18,13 @@ const Loading = () => {
       {/* Container */}
       <div className="flex flex-col justify-between items-center">
         {/* Top Logo */}
-        <div>
-          <img
-            src={parthmittal}
-            alt="Parth Mittal Logo"
-            className="w-[80px] h-[80px]"
-          />
-        </div>
+       <div className="w-[90px] h-[90px] rounded-full overflow-hidden border-2 border-cyan-400 shadow-lg flex items-center justify-center">
+  <img
+    src={parthmittal}
+    alt="Parth Mittal Logo"
+    className="w-[160px] h-[160px] object-cover scale-100"
+  />
+</div>
 
         {/* Bottom Profile Picture */}
        
