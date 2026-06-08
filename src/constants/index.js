@@ -976,20 +976,5 @@ export const TESTIMONIALS = [
   //   role: "Founder & CEO, DeepLearning, UK",
   //   feedback:
   //     "In the short project I worked with Umair on, he proved himself to be a more than capable software engineer, contributing effectively to the group's efforts, and demonstrating strong technical leadership. During this time he demonstrated proficient interpersonal skills, communication abilities, and technical expertise, especially with Python, API Integrations, and the Streamlit platform we were using. Overall he worked skillfully and communicated effectively, resulting in a successful and timely project outcome. I would enjoy working with Umair again if the opportunity arose, as he is a skilled and talented engineer, along with a valuable team player.",
-  // },
- 
-  // {
-  //   image: ahmad,
-  //   name: "Ahmad Jajja",
-  //   role: "PhD Scholar At USA",
-  //   feedback:
-  //     "I highly recommend Umair Azmat for software engineering full-stack roles and as a software engineering concepts trainer. Umair's expertise in MERN technologies, dedication, and exceptional communication skills make him an ideal candidate. During our time at Saylani Mass IT Training Program (SMIT), I witnessed Umair's unwavering commitment to delivering high-quality results and ensuring student success. His professionalism, strong work ethic, and positive attitude contribute to a productive work environment. Based on my firsthand experience, I confidently endorse Umair for software engineering positions. His extensive knowledge, excellent communication skills, and dedication make him an invaluable asset to any organization. Please feel free to contact me for further information. I have no doubt that Umair will make significant contributions to your team.",
-  // },
-  // {
-  //   image: abdullah,
-  //   name: "zain",
-  //   role: "CEO, QNAR International Inc.",
-  //   feedback:
-  //     "It’s rare that you come across standout talent like Umair Azmat. I had the pleasure of managing Umair at QNAR International. Umair's expertise in WordPress, JavaScript, TypeScript, React.js, Next.js, and React Native significantly contributed to our projects' success. Not only is he technically proficient, but he also possesses remarkable leadership qualities, evidenced by his achievements as a Gold Medalist at PFTP and his role as a former trainer at SMIT. Umair's commitment to excellence and his ability to navigate complex coding challenges have made a lasting impact on our team. He consistently delivered solutions that exceeded our expectations, demonstrating a keen understanding of both technical and business aspects. Umair is without a doubt an invaluable asset to any team, and I am confident in his continued success in the tech industry.",
-  // },
+  // }
 ];
