@@ -4,7 +4,6 @@
 
 **🔗 Portfolio Website:** `https://akshat0827.netlify.app/`
 
----
 
 ## ✨ Overview
 
