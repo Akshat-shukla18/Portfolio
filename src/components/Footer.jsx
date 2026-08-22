@@ -1,222 +1,250 @@
 import React, { useState } from "react";
-import RotatingText from "./RotatingText.jsx";
 import {
   AiOutlineMail,
   AiOutlineHome,
   AiOutlinePhone,
+  AiOutlineUser,
+  AiOutlineSend,
 } from "react-icons/ai";
-import emailjs from "emailjs-com";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import styles from "../style";
 import { socialMedia, profileLink } from "../constants";
 
 const Footer = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
   const [isLoading, setIsLoading] = useState(false);
+
+  const handleChange = (e) => {
+    setFormData((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
+  };
 
   async function onSubmit(event) {
     event.preventDefault();
+    if (!formData.name.trim() || !formData.email.trim() || !formData.message.trim()) {
+      toast.warn("Please fill in all fields.");
+      return;
+    }
+
     setIsLoading(true);
 
-    const form = event.target;
-
     try {
-      await emailjs.sendForm(
-        import.meta.env.VITE_EMAIL_SERVICE_ID,
-        import.meta.env.VITE_EMAIL_TEMPLATE_ID,
-        form,
-        import.meta.env.VITE_EMAIL_USER_ID
-      );
-      setIsLoading(false);
-      toast.success("Email sent successfully!");
-      form.reset();
+      const response = await fetch("https://formsubmit.co/ajax/ashukla20062006@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+          _subject: `New Portfolio Message from ${formData.name}`,
+          _template: "table",
+          _captcha: "false",
+        }),
+      });
+
+      const data = await response.json();
+      if (response.ok && data.success !== "false") {
+        toast.success("Message sent successfully to Akshat!");
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        throw new Error("Failed to send");
+      }
     } catch (error) {
+      window.location.href = `mailto:ashukla20062006@gmail.com?subject=Portfolio Inquiry from ${encodeURIComponent(
+        formData.name
+      )}&body=${encodeURIComponent(formData.message + "\n\nFrom: " + formData.email)}`;
+      toast.info("Opened email client with your message.");
+    } finally {
       setIsLoading(false);
-      toast.error("Failed to send message");
     }
   }
 
   return (
     <>
-      <ToastContainer position="top-right" autoClose={5000} />
+      <ToastContainer position="top-right" autoClose={5000} theme="dark" />
 
-     <div
-  className={`bg-primary ${styles.flexCenter} ${styles.paddingX} w-full overflow-hidden`}
->
-  <div className={`${styles.boxWidth} w-full`}>
-    
-    <section
-      id="contactMe"
-      className={`flex flex-col ${styles.paddingY}`}
-    >
-      
-      <div className="w-full flex flex-col items-center justify-center py-16 sm:py-20">
+      <div
+        className={`bg-primary ${styles.flexCenter} ${styles.paddingX} w-full overflow-hidden`}
+      >
+        <div className={`${styles.boxWidth} w-full`}>
+          <section id="contactMe" className={`flex flex-col ${styles.paddingY}`}>
+            <div className="w-full flex flex-col items-center justify-center py-16 sm:py-20">
+              {/* HEADING */}
+              <h1 className="text-white text-center font-bold leading-tight text-4xl sm:text-5xl md:text-6xl">
+                LET&apos;S CONNECT!
+              </h1>
 
-        {/* HEADING */}
-        <h1 className="text-white text-center font-bold leading-tight text-4xl sm:text-5xl md:text-6xl">
-          LET&apos;S CONNECT!
-        </h1>
+              {/* MAIN CONTAINER */}
+              <div className="w-full max-w-7xl mt-14 flex flex-col lg:flex-row items-stretch justify-between gap-10 lg:gap-12">
+                {/* LEFT SIDE: CONTACT INFO */}
+                <div className="w-full lg:w-1/2 flex">
+                  <div className="w-full flex flex-col justify-between bg-white/5 border border-white/10 backdrop-blur-md rounded-3xl p-6 sm:p-8 md:p-10 shadow-2xl">
+                    {/* DESCRIPTION */}
+                    <div>
+                      <p className="text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed">
+                        If you have any questions, ideas, or work opportunities aligned with my skills and interests, feel free to drop a message or reach out directly!
+                      </p>
 
-        {/* MAIN CONTAINER */}
-        <div className="w-full max-w-7xl mt-14 flex flex-col lg:flex-row items-center justify-between gap-14 lg:gap-20">
+                      {/* CONTACT INFO */}
+                      <div className="mt-8 space-y-6">
+                        {/* PHONE */}
+                        <div className="flex items-start gap-4">
+                          <div className="p-3 rounded-xl bg-teal-400/10 text-teal-400">
+                            <AiOutlinePhone className="text-xl sm:text-2xl" />
+                          </div>
+                          <div>
+                            <h3 className="text-white font-semibold text-base sm:text-lg">Phone</h3>
+                            <p className="text-gray-400 text-sm sm:text-base">+91 7056758070</p>
+                          </div>
+                        </div>
 
-          {/* LEFT SIDE */}
-          <div className="w-full lg:w-[58%] flex justify-center">
+                        {/* EMAIL */}
+                        <div className="flex items-start gap-4">
+                          <div className="p-3 rounded-xl bg-teal-400/10 text-teal-400">
+                            <AiOutlineMail className="text-xl sm:text-2xl" />
+                          </div>
+                          <div>
+                            <h3 className="text-white font-semibold text-base sm:text-lg">Email</h3>
+                            <p className="text-gray-400 text-sm sm:text-base break-all">ashukla20062006@gmail.com</p>
+                          </div>
+                        </div>
 
-            <div className="w-full max-w-2xl bg-white/5 border border-white/10 backdrop-blur-md rounded-3xl p-6 sm:p-8 md:p-10 shadow-2xl">
+                        {/* LOCATION */}
+                        <div className="flex items-start gap-4">
+                          <div className="p-3 rounded-xl bg-teal-400/10 text-teal-400">
+                            <AiOutlineHome className="text-xl sm:text-2xl" />
+                          </div>
+                          <div>
+                            <h3 className="text-white font-semibold text-base sm:text-lg">Location</h3>
+                            <p className="text-gray-400 text-sm sm:text-base">Chandigarh, India</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
 
-              {/* DESCRIPTION */}
-              <p className="text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed">
-                If you have any questions or concerns, feel free to
-                contact me. I’m open to work opportunities aligned with
-                my skills and interests.
-              </p>
-
-              {/* CONTACT INFO */}
-              <div className="mt-8 space-y-7">
-
-                {/* PHONE */}
-                <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-xl bg-teal-400/10">
-                    <AiOutlinePhone className="text-teal-400 text-xl sm:text-2xl" />
-                  </div>
-
-                  <div>
-                    <h3 className="text-white font-semibold text-lg">
-                      Phone
-                    </h3>
-
-                    <p className="text-gray-400 text-sm sm:text-base">
-                      +91 7056758070
-                    </p>
-                  </div>
-                </div>
-
-                {/* EMAIL */}
-                <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-xl bg-teal-400/10">
-                    <AiOutlineMail className="text-teal-400 text-xl sm:text-2xl" />
-                  </div>
-
-                  <div>
-                    <h3 className="text-white font-semibold text-lg">
-                      Email
-                    </h3>
-
-                    <p className="text-gray-400 text-sm sm:text-base break-all">
-                      ashukla20062006@gmail.com
-                    </p>
-                  </div>
-                </div>
-
-                {/* LOCATION */}
-                <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-xl bg-teal-400/10">
-                    <AiOutlineHome className="text-teal-400 text-xl sm:text-2xl" />
-                  </div>
-
-                  <div>
-                    <h3 className="text-white font-semibold text-lg">
-                      Location
-                    </h3>
-
-                    <p className="text-gray-400 text-sm sm:text-base">
-                      Chandigarh, India
-                    </p>
+                    {/* SOCIAL ICONS */}
+                    <div className="flex flex-wrap items-center gap-5 mt-8 pt-6 border-t border-white/10">
+                      {socialMedia.map((social) => (
+                        <a
+                          href={social.link}
+                          target="_blank"
+                          rel="noreferrer"
+                          key={social.id}
+                          className="text-white text-2xl hover:text-teal-300 hover:scale-110 transition duration-300"
+                        >
+                          {React.createElement(social.icon)}
+                        </a>
+                      ))}
+                    </div>
                   </div>
                 </div>
 
-              </div>
-
-              {/* SOCIAL ICONS */}
-              <div className="flex flex-wrap items-center gap-5 mt-10">
-
-                {socialMedia.map((social) => (
-                  <a
-                    href={social.link}
-                    target="_blank"
-                    rel="noreferrer"
-                    key={social.id}
-                    className="text-white text-2xl hover:text-teal-300 hover:scale-110 transition duration-300"
+                {/* RIGHT SIDE: CONTACT FORM */}
+                <div className="w-full lg:w-1/2 flex">
+                  <form
+                    onSubmit={onSubmit}
+                    className="w-full flex flex-col justify-between bg-white/5 border border-white/10 backdrop-blur-md rounded-3xl p-6 sm:p-8 md:p-10 shadow-2xl gap-5"
                   >
-                    {React.createElement(social.icon)}
-                  </a>
-                ))}
+                    <div>
+                      <h2 className="text-2xl font-bold font-poppins text-white mb-2">
+                        Send a Message
+                      </h2>
+                      <p className="text-gray-400 text-sm font-poppins">
+                        Have a project or opportunity in mind? Send your details below.
+                      </p>
+                    </div>
 
+                    <div className="space-y-4 flex-1 flex flex-col justify-center">
+                      {/* NAME */}
+                      <div>
+                        <label className="block text-gray-300 text-sm font-poppins font-medium mb-1.5">
+                          Your Name
+                        </label>
+                        <div className="relative flex items-center">
+                          <AiOutlineUser className="absolute left-4 text-gray-400 text-lg" />
+                          <input
+                            type="text"
+                            name="name"
+                            value={formData.name}
+                            onChange={handleChange}
+                            placeholder="John Doe"
+                            required
+                            className="w-full pl-11 pr-4 py-3 bg-black/40 border border-white/10 rounded-xl text-white placeholder-gray-500 font-poppins text-sm focus:outline-none focus:border-teal-400 transition-colors"
+                          />
+                        </div>
+                      </div>
+
+                      {/* EMAIL */}
+                      <div>
+                        <label className="block text-gray-300 text-sm font-poppins font-medium mb-1.5">
+                          Your Email
+                        </label>
+                        <div className="relative flex items-center">
+                          <AiOutlineMail className="absolute left-4 text-gray-400 text-lg" />
+                          <input
+                            type="email"
+                            name="email"
+                            value={formData.email}
+                            onChange={handleChange}
+                            placeholder="john@example.com"
+                            required
+                            className="w-full pl-11 pr-4 py-3 bg-black/40 border border-white/10 rounded-xl text-white placeholder-gray-500 font-poppins text-sm focus:outline-none focus:border-teal-400 transition-colors"
+                          />
+                        </div>
+                      </div>
+
+                      {/* MESSAGE */}
+                      <div>
+                        <label className="block text-gray-300 text-sm font-poppins font-medium mb-1.5">
+                          Message
+                        </label>
+                        <textarea
+                          name="message"
+                          rows={4}
+                          value={formData.message}
+                          onChange={handleChange}
+                          placeholder="Tell me about your project, idea, or inquiry..."
+                          required
+                          className="w-full p-4 bg-black/40 border border-white/10 rounded-xl text-white placeholder-gray-500 font-poppins text-sm focus:outline-none focus:border-teal-400 transition-colors resize-none"
+                        />
+                      </div>
+                    </div>
+
+                    {/* SUBMIT BUTTON */}
+                    <button
+                      type="submit"
+                      disabled={isLoading}
+                      className="w-full py-3.5 px-6 rounded-xl bg-gradient-to-r from-teal-400 to-cyan-500 text-gray-950 font-bold font-poppins text-base hover:opacity-95 hover:shadow-[0_0_25px_rgba(45,212,191,0.5)] active:scale-[0.99] transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed mt-2"
+                    >
+                      {isLoading ? (
+                        <div className="flex items-center gap-2">
+                          <span className="w-5 h-5 border-2 border-gray-950 border-t-transparent rounded-full animate-spin"></span>
+                          <span>Sending...</span>
+                        </div>
+                      ) : (
+                        <div className="flex items-center gap-2">
+                          <span>Send Message</span>
+                          <AiOutlineSend className="text-lg" />
+                        </div>
+                      )}
+                    </button>
+                  </form>
+                </div>
               </div>
-
             </div>
-          </div>
-
-          {/* RIGHT SIDE */}
-          <div className="w-full lg:w-[42%] flex flex-col items-center justify-center">
-
-            {/* BUTTON */}
-            <button
-              className="
-                border-2 border-teal-400
-                text-white font-bold
-                px-10 sm:px-14
-                py-3 sm:py-4
-                rounded-2xl
-                text-base sm:text-lg
-                hover:bg-teal-400/10
-                hover:shadow-[0_0_30px_rgba(45,212,191,0.5)]
-                transition-all duration-300
-                w-full max-w-[280px]
-              "
-              onClick={() =>
-                window.open(
-                  "mailto:ashukla20062006@gmail.com",
-                  "_blank"
-                )
-              }
-            >
-              Connect Now
-            </button>
-
-            {/* ROTATING TEXT */}
-            <div className="mt-8 sm:mt-10 flex justify-center">
-
-              <RotatingText
-                texts={["Any Work?", "Let Me Know!"]}
-                mainClassName="
-                  px-5 py-3
-                  bg-cyan-300
-                  text-black
-                  rounded-2xl
-                  text-xl sm:text-2xl md:text-3xl
-                  font-semibold
-                  overflow-hidden
-                  text-center
-                  shadow-lg
-                "
-                staggerFrom={"last"}
-                initial={{ y: "100%" }}
-                animate={{ y: 0 }}
-                exit={{ y: "-120%" }}
-                staggerDuration={0.015}
-                splitLevelClassName="overflow-hidden pb-1"
-                transition={{
-                  type: "spring",
-                  damping: 30,
-                  stiffness: 400,
-                }}
-                rotationInterval={2000}
-              />
-
-            </div>
-
-          </div>
-
+          </section>
         </div>
-
       </div>
-
-    </section>
-
-  </div>
-</div>
 
       {/* FOOTER */}
       <footer className="bg-gray-900 px-4 sm:px-10">

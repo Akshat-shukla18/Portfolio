@@ -591,7 +591,7 @@ export const projects = [
     link: "https://github.com/Akshat-shukla18/Interview-prep",
     image: comicify_ai,
     content:
-      "A focused platform with two modes: Assistant Mode for growth-driven guidance, and Interview Mode for role-based mock interviews. Engage in real-time verbal conversations with an AI interviewer, building confidence and readiness for real-world interviews.       f                 ",
+      "A focused platform with two modes: Assistant Mode for growth-driven guidance, and Interview Mode for role-based mock interviews. Engage in real-time verbal conversations with an AI interviewer, building confidence and readiness for real-world interviews.",
          stack: [
       {
         id: "icon-1",
