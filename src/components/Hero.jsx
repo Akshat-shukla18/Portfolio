@@ -131,41 +131,30 @@ const Hero = () => {
           >
             My name is{" "}
 <span className="text-teal-500 font-bold">Akshat Shukla </span>
-            software engineer with a passion for problem-solving, creating
-            efficient solutions, and exploring new technologies. With experience
+            , a software engineer specializing in Backend Systems, AI Engineering, and Scalable Architectures. I build resilient server-side services using Node.js and design intuitive user interfaces with
             in{" "}
             <span className="text-teal-500 font-bold">
-              JavaScript, React, and backend development
+               React.
             </span>
-            , I enjoy building scalable, user-focused applications.
+            
             <br />
             <br />
-            I'm , a full-stack developer by INFOSYS. I specialize
-            in{" "}
+           Beyond full-stack development, I sharpen my problem-solving skills through programming -
+            
             <span className="text-teal-500 font-bold">
-              MERN with AI developed applications.
+            maintaining a 1700+ rating on LeetCode with C++
             </span>{" "}
-            (Flutter, Figma, Vercel, Canva),{" "}
-            <span className="text-teal-500 font-bold">web apps (MERN)</span>,
-            and{" "}
-            <span className="text-teal-500 font-bold">
-             React Native
-            </span>
-            . I have a diverse background, having worked in teams, participated
-            in hackathons, and freelanced.
+            (Driven by a competitive mindset),{" "}
+           
+           I regularly participate in AI hackathons with cross-functional teams to engineer practical, high-impact solutions under pressure.
             <br />
             <br />
-            I’ve participated in{" "}
-            <span className="text-teal-500 font-bold">AI hackathons</span> and
-            won one of them. I'll be graduating from{" "}
+           Currently pursuing my degree at : {" "}
             <span className="text-teal-500 font-bold">
-              Chandigarh Engineering College, Mohali
+              Chandigarh Engineering College, Mohali {" "}
             </span>
-            , in <span className="text-teal-500 font-bold">September 2027</span>
-            . Currently, I'm heading to be a MERN stack developer and {" "}
-            <span className="text-teal-500 font-bold">to work upon even projects</span> and aim
-            to pursue further studies for the advance emerging technology
-            research.
+            I am focused on scaling backend infrastructure, integrating intelligent AI workflows, and solving complex algorithmic challenges.
+            . Currently, I'm heading to adapt battle-tested capability to build scalable backend systems, integrated AI workflows, and practical applications through competitive hackathons and engineering projects.
           </p>
           <a href="/AkResume.pdf" target="_blank" rel="noopener noreferrer">
 <button className="col-auto border-2 border-teal-200 w-60 text-center text-white font-bold px-6 py-2 mt-16 rounded-lg animate-pulse hover:shadow-neon hover:shadow-teal-400 transition duration-300 mb-4">

@@ -46,8 +46,8 @@ import {
   abdullah,
   fastech,
   devlotech,
-  infos
-
+  infos,
+  api_neural_explorer
 } from "../assets";
 
 import {
@@ -584,6 +584,42 @@ export const experiences = [
 
 // Add information about all the projects to be listed out in your portfolio
 export const projects = [
+  {
+    id: "project-neural-explorer",
+    title: "API Neural Explorer",
+    github: "https://github.com/Akshat-shukla18/api-neural-explorer",
+    link: "https://api-neural-explore.netlify.app",
+    image: api_neural_explorer,
+    content:
+      "A developer observability & visualization platform that turns any JSON API into an observable AI knowledge system. Features an interactive 10-stage neural pipeline: AST parsing, NLP tokenization, sliding window chunking, dense vector embeddings, MCP tool calls, RAG retrieval & grounded LLM citations.",
+    stack: [
+      {
+        id: "icon-1",
+        icon: SiReact,
+        name: "React"
+      },
+      {
+        id: "icon-2",
+        icon: SiTypescript,
+        name: "TypeScript"
+      },
+      {
+        id: "icon-3",
+        icon: SiVite,
+        name: "Vite"
+      },
+      {
+        id: "icon-4",
+        icon: SiTailwindcss,
+        name: "TailwindCSS"
+      },
+      {
+        id: "icon-5",
+        icon: SiOpenai,
+        name: "MCP / RAG"
+      },
+    ],
+  },
   {
     id: "project-1",
     title: "Interview Prep Platform",

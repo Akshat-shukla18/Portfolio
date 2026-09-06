@@ -67,6 +67,7 @@ import abdullah from "./help.jpeg";
 import ahmad from "./akshat.jpeg";
 import fastech from "./fastech.png";
 import devlotech from "./devlotech.png";
+import api_neural_explorer from "./api-neural-explorer.png";
 
 export {
   quotes,
@@ -137,6 +138,6 @@ export {
   
   abdullah,
   fastech,
-  devlotech
-
+  devlotech,
+  api_neural_explorer
 };
