@@ -166,7 +166,7 @@ const Hero = () => {
           <ProfileCard
             name={aboutMe.name}
             title="Software Engineer"
-            handle={aboutMe.githubUsername || "Akshat-shukla18"}
+            handle={aboutMe.githubUsername || "Akshat-shukla"}
             status="Online"
             contactText="Contact Me"
             avatarUrl={akshatImg}
