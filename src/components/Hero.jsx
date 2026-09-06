@@ -155,7 +155,7 @@ const Hero = () => {
               Chandigarh Engineering College, Mohali {" "}
             </span>
             I am focused on scaling backend infrastructure, integrating intelligent AI workflows, and solving complex algorithmic challenges.
-            . Currently, I'm heading to adapt battle-tested capability to build scalable backend systems, integrated AI workflows, and practical applications through competitive hackathons and engineering projects.
+            . I'm heading to adapt battle-tested capability to build scalable backend systems, integrated AI workflows, and practical applications through competitive hackathons and engineering projects.
           </p>
           <a href="/AkResume.pdf" target="_blank" rel="noopener noreferrer">
 <button className="col-auto border-2 border-teal-200 w-60 text-center text-white font-bold px-6 py-2 mt-16 rounded-lg animate-pulse hover:shadow-neon hover:shadow-teal-400 transition duration-300 mb-4">

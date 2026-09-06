@@ -306,11 +306,7 @@ export const skills = [
         icon: DiCss3,
         name: "CSS",
       },
-      {
-        id: "pl-6",
-        icon: SiCsharp,
-        name: "c#",
-      },
+     
       
      
     ],
