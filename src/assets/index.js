@@ -1,5 +1,5 @@
 import parthmittal from "./pic1.png";
-import profilePic from "./profile-pic.jpg";
+import profilePic from "./akshat.jpeg";
 import quotes from "./quotes.svg";
 import robot from "./robot.png";
 import send from "./Send.svg";

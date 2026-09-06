@@ -10,7 +10,8 @@ import { FaGithub } from "react-icons/fa";
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { CountUp } from "countup.js";
-import Spline from '@splinetool/react-spline';
+import ProfileCard from "./ProfileCard";
+import akshatImg from "../assets/akshat.jpeg";
 
 // lottie config
 const defaultOptions = {
@@ -161,11 +162,27 @@ const Hero = () => {
                            Resume
                            </button></a>
         </div>
-       <div className="flex flex-col justify-center items-center relative mt-8 md:mt-0">
-       <div className="relative overflow-hidden w-80 h-100 mr-16 mt-12">
-            <Spline scene="https://prod.spline.design/ZeuhCWq3aLO4PLwH/scene.splinecode" />
-              <div className="absolute bottom-0 right-0 w-40 h-16 bg-[#020617] z-10"></div>
-          </div>
+        <div className="flex flex-col justify-center items-center relative mt-8 md:mt-0 lg:mr-10">
+          <ProfileCard
+            name={aboutMe.name}
+            title="Software Engineer"
+            handle={aboutMe.githubUsername || "Akshat-shukla18"}
+            status="Online"
+            contactText="Contact Me"
+            avatarUrl={akshatImg}
+            showUserInfo={true}
+            enableTilt={true}
+            enableMobileTilt={false}
+            onContactClick={() => {
+              const contactSection = document.getElementById("contactMe");
+              if (contactSection) {
+                contactSection.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+            behindGlowColor="rgba(125, 190, 255, 0.67)"
+            behindGlowEnabled
+            innerGradient="linear-gradient(145deg,#60496e8c 0%,#71C4FF44 100%)"
+          />
         </div>
       </section>
 
