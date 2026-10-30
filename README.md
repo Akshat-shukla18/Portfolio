@@ -198,13 +198,11 @@ This portfolio was built to:
 
 ## 🤝 Connect With Me
 
-📧 Email: [your-email@example.com](mailto:your-email@example.com)
+📧 Email: [your-email@example.com](mailto:akweb2025@gmail.com)
 
-💼 LinkedIn: your-linkedin-profile
+💼
 
-🐙 GitHub: your-github-profile
-
-🌐 Portfolio: your-live-link
+🌐 Portfolio: https://akshat0827.netlify.app 
 
 ---
 
