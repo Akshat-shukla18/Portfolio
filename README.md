@@ -14,10 +14,9 @@ Welcome to my personal developer portfolio, a modern and interactive web experie
 Built with React and modern web technologies, the portfolio combines immersive animations, smooth interactions, and visually engaging components to create a memorable user experience while presenting my work professionally.
 
 The website serves as a central hub where visitors can explore my projects, technical expertise, achievements, and contact information.
-
 ---
 
-## 🎯 Features
+## Features
 
 ### 🎨 Modern UI/UX Design
 
