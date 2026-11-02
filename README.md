@@ -6,7 +6,7 @@
 
 
 ## ✨ Overview
-Welcome to my personal developer portfolio, a modern and interactive web experience designed to showcase my technical skills, projects,and journey as a Full-Stack Developer.
+Welcome to my personal developer portfolio, a modern and interactive web experience designed to showcase my technical skills, projects, and journey as a Full-Stack Developer.
 
 <img width="956" height="434" alt="image" src="https://github.com/user-attachments/assets/05e34bd8-e45b-4fc8-832f-944004894ece" />
 
@@ -48,7 +48,7 @@ The website serves as a central hub where visitors can explore my projects, tech
 
 ### 🧩 Innovative Component Showcase
 
-Projects, skills, and achievements are presented using a unique component-based approach that improves both usability and visual appeal.
+Projects, skills, and achievements are presented using a unique component-based approach that improves both usability and visual appearance.
 
 ---
 
