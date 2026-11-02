@@ -160,7 +160,7 @@ Add screenshots or GIFs here to showcase:
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/portfolio.git
+git clone (https://github.com/Akshat-shukla18/Portfolio)
 ```
 
 Install dependencies:
@@ -197,7 +197,7 @@ This portfolio was built to:
 
 ## 🤝 Connect With Me
 
-📧 Email: [your-email@example.com](mailto:akweb2025@gmail.com)
+📧 Email: [mailto:akweb2025@gmail.com]
 
 💼
 
