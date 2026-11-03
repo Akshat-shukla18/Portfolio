@@ -1,5 +1,6 @@
 import {
   nitk,
+  lostfound,
   cluboard,
   cash_flow,
   gdsc,
@@ -613,6 +614,42 @@ export const projects = [
         id: "icon-5",
         icon: SiOpenai,
         name: "MCP / RAG"
+      },
+    ],
+  },
+  {
+    id: "project-found-cgc",
+    title: "FoundSomething At CGC",
+    github: "https://github.com/Akshat-shukla18/FoundsomethingatCGC",
+    link: "https://github.com/Akshat-shukla18/FoundsomethingatCGC",
+    image: lostfound,
+    content:
+      "A production-grade campus Lost and Found platform engineered for college campuses. Features real-time Socket.IO messaging, institutional email OTP verification, automated chat moderation, multi-tier rate limiting, 3D physics lanyard, and an intelligent Autobot AI search assistant.",
+    stack: [
+      {
+        id: "icon-1",
+        icon: SiReact,
+        name: "React"
+      },
+      {
+        id: "icon-2",
+        icon: SiTailwindcss,
+        name: "TailwindCSS"
+      },
+      {
+        id: "icon-3",
+        icon: FaNode,
+        name: "Node.js"
+      },
+      {
+        id: "icon-4",
+        icon: SiExpress,
+        name: "Express"
+      },
+      {
+        id: "icon-5",
+        icon: SiMongodb,
+        name: "MongoDB"
       },
     ],
   },

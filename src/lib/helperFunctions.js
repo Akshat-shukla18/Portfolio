@@ -10,10 +10,11 @@ export const scrollToSection = (id) => {
 };
 
 const parseOriginFromUrl = (url) => {
+
   /**
    * splits https://github.com/repos/org-name/repo-name/issues/25
    * into [ "github.com", "repos", "org-name", "repo-name", "issues", "25"]
-   */
+   */  
   const [, ...parts] = url.split(/https:\/\/|\//gm);
   const organization = parts[1];
   const repo = parts[2];
@@ -21,9 +22,10 @@ const parseOriginFromUrl = (url) => {
    * accessing a github profile or organization and adding a .png
    * at the end of the URL will return their logo/profile picture
    */
-  const logoUrl = `https://github.com/${organization}.png`;
 
+  const logoUrl = `https://github.com/${organization}.png`;
   return {
+
     organization,
     repo,
     logoUrl,
@@ -40,7 +42,6 @@ export async function fetchContributionsWithRetry(maxRetries = 1) {
     } catch (error) {
       attempts++;
       console.log(`Attempt ${attempts} failed: ${error.message}. Retrying...`);
-
       if (attempts > maxRetries) {
         console.log("Max retries reached. Returning last error.");
         // Optionally, return a formatted error message or throw
@@ -49,7 +50,6 @@ export async function fetchContributionsWithRetry(maxRetries = 1) {
     }
   }
 }
-
 
 function generatePRQuery(repos, username) {
   const queries = repos

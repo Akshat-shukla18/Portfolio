@@ -6,6 +6,7 @@ import send from "./Send.svg";
 import shield from "./Shield.svg";
 import star from "./Star.svg";
 import menu from "./menu.svg";
+import lostfound from "./lostfound.png";
 import close from "./close.svg";
 import google from "./google.svg";
 import apple from "./apple.svg";
@@ -119,6 +120,7 @@ export {
   dennisivy,
   manipal,
   icon,
+  lostfound,
   ethforall,
   ugi,
   alb,
