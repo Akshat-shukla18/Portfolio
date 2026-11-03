@@ -6,7 +6,6 @@
 
 
 ## ✨ Overview
-
 Welcome to my personal developer portfolio, a modern and interactive web experience designed to showcase my technical skills, projects, and journey as a Full-Stack Developer.
 
 <img width="956" height="434" alt="image" src="https://github.com/user-attachments/assets/05e34bd8-e45b-4fc8-832f-944004894ece" />
@@ -15,10 +14,9 @@ Welcome to my personal developer portfolio, a modern and interactive web experie
 Built with React and modern web technologies, the portfolio combines immersive animations, smooth interactions, and visually engaging components to create a memorable user experience while presenting my work professionally.
 
 The website serves as a central hub where visitors can explore my projects, technical expertise, achievements, and contact information.
-
 ---
 
-## 🎯 Features
+## Features
 
 ### 🎨 Modern UI/UX Design
 
@@ -50,7 +48,7 @@ The website serves as a central hub where visitors can explore my projects, tech
 
 ### 🧩 Innovative Component Showcase
 
-Projects, skills, and achievements are presented using a unique component-based approach that improves both usability and visual appeal.
+Projects, skills, and achievements are presented using a unique component-based approach that improves both usability and visual appearance.
 
 ---
 
@@ -162,7 +160,7 @@ Add screenshots or GIFs here to showcase:
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/portfolio.git
+git clone (https://github.com/Akshat-shukla18/Portfolio)
 ```
 
 Install dependencies:
@@ -199,13 +197,11 @@ This portfolio was built to:
 
 ## 🤝 Connect With Me
 
-📧 Email: [your-email@example.com](mailto:your-email@example.com)
+📧 Email: [mailto:akweb2025@gmail.com]
 
-💼 LinkedIn: your-linkedin-profile
+💼
 
-🐙 GitHub: your-github-profile
-
-🌐 Portfolio: your-live-link
+🌐 Portfolio: https://akshat0827.netlify.app 
 
 ---
 
