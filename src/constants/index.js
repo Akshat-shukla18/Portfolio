@@ -1022,11 +1022,11 @@ export const aboutMe = {
   name: "Akshat Shukla",
   githubUsername: 'Akshat-shukla18',
   tagLine: `
-  Head to Software Engineer | 
-  SGPA: 8.58/10.0 | 
+  Software Engineer | 
+  SGPA: 8.8/10.0 | 
   MERN Enthusiast | 
   DSA & C++ | 
-  Smart India Hackathon Participant | 
+  Smart India Hackathon  | 
   
 `,
   intro: "MERN Stack Developer crafting scalable, smart, and stunning web apps , open to freelance projects worldwide."
